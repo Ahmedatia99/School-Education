@@ -1,7 +1,11 @@
 import React from "react";
 
 function Navbar() {
-  return <div>Navbar</div>;
+  return (
+    <section className="container mx-auto">
+      <nav>this is navbar</nav>
+    </section>
+  );
 }
 
 export default Navbar;
