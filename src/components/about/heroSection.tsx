@@ -2,7 +2,7 @@ import React from "react";
 
 const HeroSection = () => {
   return (
-    <div className="relative flex flex-col md:flex-row items-center justify-between p-15 md:p-23 bg-white gap-6 border-2 m-[2%] mb-15 [box-shadow:5px_5px_0_black]">
+    <div className="relative flex flex-col md:flex-row items-center justify-between p-15 md:p-23 gap-6 border-2  [box-shadow:5px_5px_0_black] bg-white">
       {/* Left Section */}
       <div className=" md:w-1/2  flex flex-col items-center gap-1 md:items-start">
         <img
@@ -13,12 +13,12 @@ const HeroSection = () => {
         <button className="border-2 rounded-lg px-4 py-2  font-bold text-center">
           Overview
         </button>
-        <h1 className="text-[28px] font-bold text-center md:text-[38px] md:text-start">
+        <h1 className="text-[28px] font-bold text-center md:text-[38px] md:text-start ">
           Welcome to Little Learners Academy
         </h1>
       </div>
-      {/* Right Section */}
 
+      {/* Right Section */}
       <div className="text-center md:w-1/2">
         <p className="font-bold">
           A leading kinder garden school dedicated to providing a nurturing and

@@ -4,7 +4,7 @@ import SubContainer from "../common/SubContainer";
 function ourMission() {
   return (
     // Main Container
-    <div className=" flex flex-col gap-10 items-center shadow-2xl mb-15 m-[5%]  ">
+    <div>
       {/* Top Container */}
       <SubContainer
         btnText="Mission & Vision"
@@ -14,10 +14,10 @@ function ourMission() {
           growth."
       />
       {/* Container Boxes */}
-      <div className=" flex flex-col md:flex-row gap-10">
+      <div className=" flex flex-col md:flex-row gap-10 ">
         {/* Mid Container */}
 
-        <div className="flex flex-col p-10 w-full gap-10  border-2 rounded-2xl [box-shadow:5px_5px_0_black]">
+        <div className="flex flex-col p-10 w-full gap-10  border-2 rounded-2xl [box-shadow:5px_5px_0_black] bg-white">
           {/* Mid Container Top */}
 
           <div className="flex flex-row justify-between ">
@@ -40,7 +40,7 @@ function ourMission() {
 
         {/* Bottom Container */}
 
-        <div className="flex flex-col border-2 rounded-2xl p-10 w-full gap-10 [box-shadow:5px_5px_0_black]">
+        <div className="flex flex-col border-2 rounded-2xl p-10 w-full gap-10 [box-shadow:5px_5px_0_black]  bg-white">
           {/* Bottom Container Top */}
 
           <div className="flex flex-row justify-between ">

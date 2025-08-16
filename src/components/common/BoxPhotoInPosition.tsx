@@ -10,7 +10,7 @@ function BoxPhotoInPosition({
   pText,
 }: BoxPhotoInPositionProps) {
   return (
-    <div className="relative flex flex-col items-start gap-5 p-8 pt-10 border-2 rounded-2xl [box-shadow:5px_5px_0_black] m-[5%]">
+    <div className="   relative flex flex-col items-start gap-5 p-8 pt-10 border-2 rounded-2xl w-full [box-shadow:5px_5px_0_black] bg-white">
       <img
         src={imgSrc}
         alt=""

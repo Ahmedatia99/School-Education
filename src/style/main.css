@@ -1,1 +1,10 @@
 @import "tailwindcss";
+
+:root {
+  --desktopSectionMargin: 5%;
+  --laptopSectionMargin: 3%;
+  --mobileSectionMargin: 1%;
+}
+body {
+  background-color: #fff5f0;
+}
