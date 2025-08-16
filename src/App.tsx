@@ -1,7 +1,11 @@
+import HeroSection from "./components/about/heroSection";
+import OurMission from "./components/about/ourMission";
+import About from "./pages/About";
+
 function App() {
   return (
     <>
-      <h1 className="text-red-500 p-10 text-6xl mr">Hello world!</h1>
+      <About />;
     </>
   );
 }
