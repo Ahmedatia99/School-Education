@@ -1,1 +1,15 @@
 @import "tailwindcss";
+body {
+    @apply bg-light text-dark;
+}
+.banner-cover {
+    @apply bg-cover bg-center;
+    background-image: url("./images/TopBanner.png");
+}
+
+@theme {
+    --color-dark: #262626;
+    --color-morning: #ff8d4d;
+    --color-liteMorning: #ffae80;
+    --color-light: #fff5f0;
+}
