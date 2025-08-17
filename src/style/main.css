@@ -58,13 +58,8 @@
     @apply w-[182.69px] h-10 relative;
   }
 
-  .logo-svg {
-    @apply w-10 h-10;
-  }
-
-  /* Logo Text Button */
-  .logo-text-button {
-    @apply absolute left-[25.53%] right-0 top-[29.75%] bottom-[30.71%] border-none text-[#262626] font-['Outfit'] text-xs font-semibold cursor-pointer flex items-center justify-center text-center;
+  .logo-image {
+    @apply w-full h-full object-contain;
   }
 
   /* Company Description */
@@ -86,6 +81,10 @@
   }
 
   .contact-icon {
+    @apply w-5 h-5 text-[#262626];
+  }
+
+  .icon-button {
     @apply w-5 h-5;
   }
 

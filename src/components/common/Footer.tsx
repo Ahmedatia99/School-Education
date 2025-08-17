@@ -20,7 +20,7 @@ const Footer: React.FC = () => {
             </div>
 
             {/* Paragraph */}
-            <p className="company-description text-light">
+            <p className="company-description">
               We believe in the power of play to foster creativity, problem-solving skills, and imagination.
             </p>
           </div>
