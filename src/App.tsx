@@ -1,10 +1,9 @@
-import HeroSection from "./components/about/heroSection";
-import OurMission from "./components/about/ourMission";
+import Home from "./pages/Home";
 import About from "./pages/About";
-
 function App() {
   return (
     <>
+      <Home />
       <About />;
     </>
   );
