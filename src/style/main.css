@@ -1,16 +1,154 @@
 @import "tailwindcss";
 
-body {
+@layer base {
+  body {
     @apply bg-light text-dark;
-}
-.banner-cover {
+  }
+  
+  .banner-cover {
     @apply bg-cover bg-center;
     background-image: url("./images/TopBanner.png");
+  }
 }
 
 @theme {
-    --color-dark: #262626;
-    --color-morning: #ff8d4d;
-    --color-liteMorning: #ffae80;
-    --color-light: #fff5f0;
+  --color-dark: #262626;
+  --color-morning: #ff8d4d;
+  --color-liteMorning: #ffae80;
+  --color-light: #fff5f0;
+}
+
+@layer components {
+  /* ===== FOOTER COMPONENT STYLES ===== */
+
+  /* Main Footer Container */
+  .footer-container {
+    @apply relative w-full mx-auto mt-20 mb-10 bg-white border-2 border-[#262626] rounded-xl flex flex-col items-start;
+    box-shadow: 6px 6px 0px 2px #1E1E1E;
+    @apply p-4 md:p-8 lg:p-20 lg:pb-10 lg:max-w-[1340px] lg:h-[572px];
+  }
+
+  /* Main Content Section */
+  .footer-main-section {
+    @apply flex flex-col gap-4 w-full md:flex-row md:gap-8 lg:gap-20 lg:w-[1180px];
+  }
+
+  /* Left Section - Company Info */
+  .footer-left-section {
+    @apply flex flex-col gap-4 w-full md:gap-6 lg:gap-10 lg:w-[393px];
+  }
+
+  /* Right Section - Navigation */
+  .footer-right-section {
+    @apply flex flex-col gap-4 w-full md:flex-row md:gap-4 lg:gap-5 lg:w-[707px];
+  }
+
+  /* Bottom Section */
+  .footer-bottom-section {
+    @apply flex flex-col items-center gap-4 w-full lg:w-[1180px];
+  }
+
+  /* Logo Container */
+  .logo-container {
+    @apply flex flex-col gap-4 w-full lg:w-[393px];
+  }
+
+  /* Logo */
+  .logo {
+    @apply w-[182.69px] h-10 relative;
+  }
+
+  .logo-svg {
+    @apply w-10 h-10;
+  }
+
+  /* Logo Text Button */
+  .logo-text-button {
+    @apply absolute left-[25.53%] right-0 top-[29.75%] bottom-[30.71%] border-none text-[#262626] font-['Outfit'] text-xs font-semibold cursor-pointer flex items-center justify-center text-center;
+  }
+
+  /* Company Description */
+  .company-description {
+    @apply w-full lg:w-[393px];
+  }
+
+  /* Contact Information */
+  .contact-address {
+    @apply flex flex-col gap-5 w-full not-italic lg:w-[393px];
+  }
+
+  .contact-button {
+    @apply flex items-center gap-2 w-full h-8 rounded-md lg:w-[393px];
+  }
+
+  .contact-link {
+    @apply w-full lg:w-[353px];
+  }
+
+  .contact-icon {
+    @apply w-5 h-5;
+  }
+
+  /* Navigation */
+  .nav-section {
+    @apply flex flex-col gap-5 w-full lg:w-[161.75px];
+  }
+
+  .nav-heading {
+    @apply w-full lg:w-[161.75px];
+  }
+
+  .nav-list {
+    @apply flex flex-col gap-3.5 w-full list-none;
+  }
+
+  .footer-link {
+    @apply w-full font-['Outfit'] font-medium text-base text-[#333333] no-underline block transition-colors duration-200 hover:text-[#262626] lg:w-[161.75px];
+  }
+
+  /* Bottom Sub Container */
+  .bottom-sub-container {
+    @apply flex flex-col justify-between items-center gap-4 w-full md:flex-row md:gap-8 lg:gap-[343px] lg:w-[1180px];
+  }
+
+  /* Legal Links */
+  .footer-legal-container {
+    @apply flex flex-col items-center gap-2 w-full md:flex-row md:items-start lg:gap-2.5 lg:w-[351px];
+  }
+
+  .legal-links-list {
+    @apply flex flex-col items-center gap-2 w-full md:flex-row md:items-start lg:gap-2.5 lg:w-[351px] list-none;
+  }
+
+  .footer-legal-link {
+    @apply w-full font-['Outfit'] font-medium text-base text-[#333333] no-underline block transition-colors duration-200 hover:text-[#262626] relative lg:w-[118px];
+  }
+
+  /* Separators */
+  .footer-legal-link:not(:last-child)::after {
+    content: '';
+    @apply absolute -right-3 top-1/2 -translate-y-1/2 rotate-90 w-6 h-0 border-2 border-[#262626] hidden md:block;
+  }
+
+  /* Social Media */
+  .social-nav {
+    @apply flex gap-3.5 w-full lg:w-[172px];
+  }
+
+  .footer-social-button {
+    @apply flex p-2 w-10 h-10 bg-[#FFDECC] border-2 border-[#262626] rounded-md hover:bg-[#FFD4B8] transition-colors lg:p-3.5 lg:w-12 lg:h-12;
+  }
+
+  .social-icon {
+    @apply w-5 h-5;
+  }
+
+  /* Separator and Copyright */
+  .footer-separator {
+    @apply w-full h-0 border border-[#262626] lg:w-[1180px];
+  }
+
+  .copyright-container {
+    @apply w-full lg:w-[1180px];
+  }
 }
