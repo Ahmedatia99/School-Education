@@ -6,7 +6,7 @@ type SubContainerParams = {
 };
 function SubContainer({ btnText, h2Text, pText }: SubContainerParams) {
   return (
-    <div className="  flex flex-col items-center mb-12 ">
+    <div className="  flex flex-col items-center mb-12 mt-12 ">
       <button className="border-3 rounded-md p-2 px-3 font-medium text-[16px] bg-white">
         {btnText}
       </button>

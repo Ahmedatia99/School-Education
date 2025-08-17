@@ -3,13 +3,13 @@ import React from "react";
 function History() {
   return (
     <div>
-      <div className="flex flex-col p-12 gap-10 border-2 [box-shadow:5px_5px_0_black] bg-white  rounded-xl">
+      <div className="flex flex-col p-10 md:p-5 gap-10 border-2 [box-shadow:5px_5px_0_black] bg-white  rounded-xl">
         {/* ===== 2023 Section ===== */}
-        <div className="flex flex-col md:flex-row items-start md:items-center    gap-8">
+        <div className="flex flex-col md:flex-row items-start md:items-center gap-8">
           {/* Left */}
-          <div className="flex items-center gap-5 border-2 p-5 pl-10 rounded-xl [box-shadow:5px_5px_0_black] w-full md:w-auto">
+          <div className="flex items-center gap-5 border-2 p-5  rounded-xl [box-shadow:5px_5px_0_black] w-full md:w-auto ">
             <img className="w-16" src="/assets/blocks.png" alt="blocks" />
-            <span className="font-bold text-4xl md:text-5xl px-3 py-1 rounded">
+            <span className="font-bold text-4xl md:text-5xl   rounded">
               2023
             </span>
           </div>
@@ -29,9 +29,9 @@ function History() {
 
         {/* ===== 2017 Section ===== */}
         <div className="flex flex-col md:flex-row items-start md:items-center    gap-8">
-          <div className="flex items-center gap-5 border-2 p-5 pl-10 rounded-xl [box-shadow:5px_5px_0_black] w-full md:w-auto">
+          <div className="flex items-center gap-5 border-2 p-5    rounded-xl [box-shadow:5px_5px_0_black] w-full md:w-auto">
             <img className="w-16" src="/assets/blocks.png" alt="blocks" />
-            <span className="font-bold text-4xl md:text-5xl px-3 py-1 rounded">
+            <span className="font-bold text-4xl md:text-5xl   rounded">
               2017
             </span>
           </div>
@@ -50,9 +50,9 @@ function History() {
 
         {/* ===== 2012 Section ===== */}
         <div className="flex flex-col md:flex-row items-start md:items-center    gap-8">
-          <div className="flex items-center gap-5 border-2 p-5 pl-10 rounded-xl [box-shadow:5px_5px_0_black] w-full md:w-auto">
+          <div className="flex items-center gap-5 border-2 p-5    rounded-xl [box-shadow:5px_5px_0_black] w-full md:w-auto">
             <img className="w-16" src="/assets/blocks.png" alt="blocks" />
-            <span className="font-bold text-4xl md:text-5xl px-3 py-1 rounded">
+            <span className="font-bold text-4xl md:text-5xl   rounded">
               2012
             </span>
           </div>
@@ -71,9 +71,9 @@ function History() {
 
         {/* ===== 2005 Section ===== */}
         <div className="flex flex-col md:flex-row items-start md:items-center    gap-8">
-          <div className="flex items-center gap-5 border-2 p-5 pl-10 rounded-xl [box-shadow:5px_5px_0_black] w-full md:w-auto">
+          <div className="flex items-center gap-5 border-2 p-5    rounded-xl [box-shadow:5px_5px_0_black] w-full md:w-auto">
             <img className="w-16" src="/assets/blocks.png" alt="blocks" />
-            <span className="font-bold text-4xl md:text-5xl  px-3 py-1 rounded">
+            <span className="font-bold text-4xl md:text-5xl    rounded">
               2005
             </span>
           </div>
