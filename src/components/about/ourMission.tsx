@@ -14,7 +14,7 @@ function ourMission() {
           growth."
       />
       {/* Container Boxes */}
-      <div className=" flex flex-col md:flex-row gap-10 ">
+      <div className=" flex flex-col md:flex-row gap-10 lg:mx-5 ">
         {/* Mid Container */}
 
         <div className="flex flex-col p-10 w-full gap-10  border-2 rounded-2xl [box-shadow:5px_5px_0_black] bg-white">
