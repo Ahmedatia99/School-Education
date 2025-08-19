@@ -1,10 +1,20 @@
 @import "tailwindcss";
 
+
+.banner-cover {
+  @apply bg-cover bg-center;
+  background-image: url("./images/TopBanner.png");
+}
+
+
 @layer base {
   body {
     @apply bg-light text-dark;
   }
-  
+
+  h1 {
+    font-family: "Raleway", sans-serif;
+    
   .banner-cover {
     @apply bg-cover bg-center;
     background-image: url("./images/TopBanner.png");
@@ -18,6 +28,10 @@
   --color-light: #fff5f0;
 }
 
+
+.btn-hover {
+  @apply hover:bg-orange-500 hover:text-white hover:scale-105 transition-all duration-300;
+  }
 @layer components {
   /* ===== FOOTER COMPONENT STYLES ===== */
 
