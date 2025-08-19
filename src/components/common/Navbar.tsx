@@ -24,8 +24,8 @@ const Navbar: React.FC = () => {
   const location = useLocation();
 
   return (
-    <header className="mt-2 w-full flex items-center px-2 bg-white">
-      <nav className="container mx-auto flex items-center justify-between border-2 border-dark rounded-xl h-16">
+    <header className="px-2">
+      <nav className="mt-2 w-full bg-white container mx-auto flex items-center justify-between border-2 border-dark rounded-xl h-16">
         {/* Logo */}
         <div className="flex items-center gap-2 bg-morning px-3 rounded-bl-xl h-full rounded-tl-xl">
           <img src={logo} alt="logo" className=" w-32 " loading="lazy" />
