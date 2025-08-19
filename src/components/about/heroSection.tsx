@@ -19,8 +19,8 @@ const HeroSection = () => {
       </div>
 
       {/* Right Section */}
-      <div className="text-center md:w-1/2">
-        <p className="font-bold">
+      <div className=" md:w-1/2">
+        <p className="font-medium  text-center md:text-start">
           A leading kinder garden school dedicated to providing a nurturing and
           stimulating environment for young learners. With a commitment to
           excellence in early education, we believe in shaping curious minds and

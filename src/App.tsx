@@ -4,6 +4,7 @@ import Academic from "./pages/Academic";
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/common/Navbar";
 import Banner from "./components/common/Banner";
+
 function App() {
   return (
     <>
