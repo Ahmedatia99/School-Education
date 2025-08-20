@@ -1,5 +1,7 @@
 import React from "react";
 import SubContainer from "../common/SubContainer";
+import { IoIosMail } from "react-icons/io";
+
 type CardParams = {
   imgSrc: string;
   name: string;
@@ -8,7 +10,7 @@ type CardParams = {
 };
 function TeamMemberCard({ imgSrc, name, h3text, ptext }: CardParams) {
   return (
-    <div className="container flex - flow-col gap-10  bg-white border-2 rounded-xl [box-shadow:5px_5px_0_black]">
+    <div className=" team-member-card flex - flow-col gap-10  bg-white border-2 rounded-xl [box-shadow:5px_5px_0_black]">
       <div className="box flex flex-col p-5 gap-5">
         <div className="box-top flex flex-row justify-between">
           <div className="flex flex-row gap-3 items-center">
@@ -17,7 +19,10 @@ function TeamMemberCard({ imgSrc, name, h3text, ptext }: CardParams) {
           </div>
           <div className="top-right">
             <div className="w-18">
-              <img src="/assets/message.png" alt="Message Icon" />
+              <IoIosMail
+                className="p-3 w-16 h-16 rounded-md border-3"
+                style={{ backgroundColor: "#FFDECC" }}
+              />
             </div>
           </div>
         </div>
@@ -37,7 +42,7 @@ function TeamMembers() {
         h2Text="Our Team Members"
         pText="At Little Learners Academy, our teaching team is the heart of our educational journey. We take great pride in employing highly qualified and passionate educators who possess a deep understanding of early childhood development. Our teachers create a warm and engaging atmosphere, encouraging curiosity, instilling confidence, and fostering a love for learning."
       />
-      <div className="teamMembersContainer grid grid-cols-1 md:grid-cols-2 gap-20 md:gap-8">
+      <div className="teamMembers grid grid-cols-1 md:grid-cols-2 gap-20 md:gap-8">
         <TeamMemberCard
           imgSrc="/assets/msSara.png"
           name="Ms. Sarah Anderson"

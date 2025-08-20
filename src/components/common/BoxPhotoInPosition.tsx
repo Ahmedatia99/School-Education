@@ -1,26 +1,32 @@
 import React from "react";
-type BoxPhotoInPositionProps = {
-  imgSrc: string;
-  h3Text: string;
-  pText: string;
-};
-function BoxPhotoInPosition({
-  imgSrc,
-  h3Text,
-  pText,
-}: BoxPhotoInPositionProps) {
+import type { IconType } from "react-icons";
+
+type BoxObject = { pText: string; h3Text: string; icon: IconType };
+
+type BoxPhotoInPositionPraams = { boxes: BoxObject[] };
+
+function BoxPhotoInPosition({ boxes }: BoxPhotoInPositionPraams) {
   return (
-    <div className="   relative flex flex-col items-start gap-5 p-8 pt-10 border-2 rounded-2xl w-full [box-shadow:5px_5px_0_black] bg-white">
-      <img
-        src={imgSrc}
-        alt=""
-        className="absolute top-0 left-5 w-15 rounded-lg -translate-y-1/2"
-      />
-      <h3 className="font-bold text-[22px] text-center text-start w-[90%]">
-        {h3Text}
-      </h3>
-      <p className="">{pText}</p>
-    </div>
+    <>
+      {boxes.map((box, index) => (
+        <div
+          key={index}
+          className="achievement-box relative flex flex-col items-start gap-5 p-8 pt-10 border-2 rounded-2xl w-full [box-shadow:5px_5px_0_black] bg-white"
+        >
+          <div>
+            <box.icon
+              className="icon absolute top-0 left-5 rounded-lg -translate-y-1/2 p-4 w-16 h-16 border-3 "
+              style={{ backgroundColor: "#FFDECC" }}
+            />
+          </div>
+
+          <h3 className="font-bold text-[22px] text-center text-start w-[90%]">
+            {box.h3Text}
+          </h3>
+          <p>{box.pText}</p>
+        </div>
+      ))}
+    </>
   );
 }
 

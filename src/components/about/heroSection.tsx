@@ -2,7 +2,7 @@ import React from "react";
 
 const HeroSection = () => {
   return (
-    <div className="relative flex flex-col md:flex-row items-center justify-between p-15 md:p-23 gap-6 border-2  [box-shadow:5px_5px_0_black] bg-white">
+    <div className="hero-section relative flex flex-col md:flex-row items-center justify-between p-15 md:p-23 gap-6 border-2  [box-shadow:5px_5px_0_black] bg-white">
       {/* Left Section */}
       <div className=" md:w-1/2  flex flex-col items-center gap-1 md:items-start">
         <img

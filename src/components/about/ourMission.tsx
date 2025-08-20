@@ -14,15 +14,15 @@ function ourMission() {
           growth."
       />
       {/* Container Boxes */}
-      <div className=" flex flex-col md:flex-row gap-10 lg:mx-5 ">
+      <div className=" our-mission flex flex-col md:flex-row gap-10 xl:mx-5 md:mx-0 ">
         {/* Mid Container */}
 
         <div className="flex flex-col p-10 w-full gap-10  border-2 rounded-2xl [box-shadow:5px_5px_0_black] bg-white">
           {/* Mid Container Top */}
 
-          <div className="flex flex-row justify-between ">
+          <div className="flex flex-row justify-between  sm:text-start  text-center">
             <h3 className="text-[30px] font-bold">Mission</h3>
-            <img src="/assets/mission.png" alt="" className="w-14" />
+            <img src="/assets/mission.png" alt="" className="w-12" />
           </div>
           {/* Mid Container Bottom */}
 
@@ -40,10 +40,10 @@ function ourMission() {
 
         {/* Bottom Container */}
 
-        <div className="flex flex-col border-2 rounded-2xl p-10 w-full gap-10 [box-shadow:5px_5px_0_black]  bg-white">
+        <div className="flex flex-col border-2 rounded-2xl p-10 w-full gap-10 [box-shadow:5px_5px_0_black]  bg-white  ">
           {/* Bottom Container Top */}
 
-          <div className="flex flex-row justify-between ">
+          <div className="flex flex-row justify-between  ">
             <h3 className="text-[30px] font-bold">Vision</h3>
             <img src="/assets/vision.png" alt="" className="w-14" />
           </div>

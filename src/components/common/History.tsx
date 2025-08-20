@@ -3,7 +3,7 @@ import React from "react";
 function History() {
   return (
     <div>
-      <div className="flex flex-col p-10 md:p-5 gap-10 border-2 [box-shadow:5px_5px_0_black] bg-white  rounded-xl">
+      <div className="history-container flex flex-col p-10 md:p-5 gap-10 border-2 xl:mx-5 md:mx-0 [box-shadow:5px_5px_0_black] bg-white  rounded-xl">
         {/* ===== 2023 Section ===== */}
         <div className="flex flex-col md:flex-row items-start md:items-center gap-8">
           {/* Left */}
@@ -22,13 +22,13 @@ function History() {
               Adapting to new challenges, we remained committed to our mission
               of providing an exceptional early education. Looking ahead with
               optimism, we envision a future filled with boundless possibilities
-              as we continue shaping the leaders and thinkers of tomorrow.
+              lorem20
             </p>
           </div>
         </div>
 
         {/* ===== 2017 Section ===== */}
-        <div className="flex flex-col md:flex-row items-start md:items-center    gap-8">
+        <div className="flex flex-col md:flex-row items-start md:items-center gap-8">
           <div className="flex items-center gap-5 border-2 p-5    rounded-xl [box-shadow:5px_5px_0_black] w-full md:w-auto">
             <img className="w-16" src="/assets/blocks.png" alt="blocks" />
             <span className="font-bold text-4xl md:text-5xl   rounded">
