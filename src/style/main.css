@@ -8,15 +8,18 @@
 @layer base {
   body {
     @apply bg-light text-dark;
-  }
-
-  h1 {
     font-family: "Raleway", sans-serif;
+  }
+  p {
+    font-family: "Outfit", sans-serif;
   }
 
   .banner-cover {
     background-image: url("./images/TopBanner.png");
   }
+}
+button:hover {
+  background-color: #fff5f0;
 }
 
 @layer components {
@@ -34,151 +37,4 @@
   --color-liteMorning: #ffae80;
   --color-light: #fff5f0;
   --color-orange: #ffefe5;
-}
-
-@media (max-width: 320px) {
-  html {
-    font-size: 10px;
-  }
-
-  .hero-section {
-    padding: 5px;
-    padding-top: 30px;
-  }
-  .hero-section h1 {
-    padding-top: 10px;
-  }
-  .hero-section img {
-    width: 40px;
-  }
-
-  .sub-container button {
-    font-size: 14px;
-  }
-  .sub-container h2 {
-    font-size: 16px;
-    padding-bottom: 10px;
-  }
-  .sub-container p {
-    width: 90%;
-    font-size: 11px;
-  }
-  .our-mission div {
-    align-items: center;
-    flex-direction: column;
-    padding: 3px;
-    text-align: center;
-    font-size: 10px;
-  }
-  .our-mission h3 {
-  }
-  .our-mission img {
-    font-size: 30px;
-    text-align: center;
-    margin-top: 10px;
-  }
-  .our-achievements {
-    flex-direction: column;
-  }
-
-  .our-achievements span {
-    margin-top: 15px;
-    font-size: 15px;
-  }
-  .our-achievements div {
-    padding: 0;
-    margin: 0;
-
-    margin-top: 10px;
-    width: 80px;
-  }
-  .achievement-box {
-    padding: 10px;
-  }
-
-  .achievement-box div .icon {
-    width: 40px;
-    height: 40px;
-    padding: 5px;
-  }
-  .achievement-box h3 {
-    width: 100%;
-    font-size: 12px;
-    text-align: center;
-  }
-  .achievement-box p {
-    text-align: center;
-  }
-
-  .history-container {
-    padding: 9px;
-  }
-  .history-container div {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .history-container > div.flex > div:first-child {
-    flex-direction: row;
-    padding: 5px;
-  }
-
-  .history-container img {
-    width: 30px;
-  }
-
-  .history-container span {
-    font-size: 20px;
-  }
-
-  .history-container h3 {
-    font-size: 15px;
-  }
-
-  .history-container p {
-    font-size: 10اpx;
-  }
-  .teamMembers {
-    gap: 35px;
-  }
-  .teamMembers > div {
-    flex-direction: column;
-    padding: 4px;
-  }
-
-  .teamMembers .box-top {
-    align-items: center;
-    gap: 2px;
-  }
-
-  .teamMembers .box-top img {
-    width: 60px;
-    height: 60px;
-  }
-
-  .teamMembers .box-top span {
-    font-size: 11px;
-    text-align: center;
-  }
-
-  .teamMembers .top-right svg {
-    display: none;
-  }
-
-  .teamMembers .box-bottom h3 {
-    font-size: 12px;
-    text-align: center;
-  }
-
-  .teamMembers .box-bottom p {
-    font-size: 10px;
-    text-align: center;
-    margin-top: 10px;
-  }
-
-  .teamMembers .box,
-  .teamMembers .box-bottom {
-    padding: 4px;
-    gap: 2px;
-  }
 }
