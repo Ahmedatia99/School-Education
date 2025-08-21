@@ -76,7 +76,7 @@ const FrequentlyQuestions = () => {
   );
 
   return (
-    <main className="py-10  bg-older overflow-hidden relative flex justify-between items-center">
+    <main className="pt-10  bg-older overflow-hidden relative flex justify-between items-center">
       <div className="container mx-auto px-5 relative z-0 h-full">
         <SubContainer
           h2Text={"Frequently Asked Questions"}
