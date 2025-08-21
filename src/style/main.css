@@ -14,25 +14,25 @@
     font-family: "Raleway", sans-serif;
   }
 
-    .banner-cover {
-      background-image: url("./images/TopBanner.png");
-    }
+  .banner-cover {
+    background-image: url("./images/TopBanner.png");
   }
+}
 
-  @layer components {
-    .hero-card {
-      @apply flex flex-col sm:flex-row items-center justify-between text-base md:text-lg font-semibold text-dark w-full max-w-2xl mt-6 md:mt-4 lg:mt-8 bg-orange py-4 md:py-2 lg:py-6 px-4 md:px-8 lg:px-12 border-2 border-dark rounded-xl shadow-[6px_6px_0px_rgba(255,190,153,1)] gap-4 sm:gap-0;
-    }
-    .hero-span {
-      @apply text-base md:text-xs font-bold text-center;
-    }
+@layer components {
+  .hero-card {
+    @apply flex flex-col sm:flex-row items-center justify-between text-base md:text-lg font-semibold text-dark w-full max-w-2xl mt-6 md:mt-4 lg:mt-8 bg-orange py-4 md:py-2 lg:py-6 px-4 md:px-8 lg:px-12 border-2 border-dark rounded-xl shadow-[6px_6px_0px_rgba(255,190,153,1)] gap-4 sm:gap-0;
   }
-
-  @theme {
-    --color-dark: #262626;
-    --color-morning: #ff8d4d;
-    --color-liteMorning: #ffae80;
-    --color-light: #fff5f0;
-    --color-orange: #ffefe5;
+  .hero-span {
+    @apply text-base md:text-xs font-bold text-center;
   }
+}
 
+@theme {
+  --color-dark: #262626;
+  --color-morning: #ff8d4d;
+  --color-liteMorning: #ffae80;
+  --color-light: #fff5f0;
+  --color-orange: #ffefe5;
+  --color-mini: #ffdecc;
+}
