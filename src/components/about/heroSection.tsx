@@ -1,8 +1,8 @@
 import React from "react";
-
-const HeroSection = ({ HeroBtn, HeroH, HeroP }) => {
+type HeroSectionParams = {HeroBtn:string,HeroH:string,HeroP:string}
+const HeroSection = ({ HeroBtn, HeroH, HeroP } : HeroSectionParams) => {
   return (
-    <div className="relative flex flex-col md:flex-row items-center justify-between p-15 md:p-23 gap-6 border-2  [box-shadow:5px_5px_0_black] bg-white">
+    <div className="relative flex flex-col md:flex-row items-center justify-between p-15 md:p-23 gap-6 border-2 rounded-xl  box-shadow bg-white">
       {/* Left Section */}
       <div className=" md:w-1/2  flex flex-col items-center gap-1 md:items-start">
         <img
@@ -27,3 +27,5 @@ const HeroSection = ({ HeroBtn, HeroH, HeroP }) => {
 };
 
 export default HeroSection;
+
+
