@@ -1,121 +1,141 @@
-import React from "react";
-import logo from "/images/Logo.png";
-import {MdEmail, MdPhone, MdLocationOn} from "react-icons/md";
-import {FaFacebook, FaTwitter, FaLinkedin} from "react-icons/fa";
+import {
+  FaFacebookF,
+  FaTwitter,
+  FaInstagram,
+  FaGithub,
+  FaYoutube,
+} from "react-icons/fa";
 
-const Footer: React.FC = () => {
+export default function Footer() {
   return (
-      <footer className="footer-container" role="contentinfo" aria-label="Site footer">
-        {/* Top: Brand + Nav */}
-        <div className="footer-top">
-          {/* Brand/Company info */}
-          <section className="footer-brand" aria-labelledby="company-info">
-            <h2 id="company-info" className="footer-sr">Company Information</h2>
-
-            <img src={logo} alt="Little Learners Logo" className="footer-logo" />
-            <p className="footer-desc">
-              We believe in the power of play to foster creativity, problem-solving skills,
-              and imagination.
+    <footer className="px-3">
+      <div className="container p-8 mx-auto bg-white text-dark rounded-xl border-2 border-dark shadow-[6px_6px_0px_rgba(0,0,0,1)] mb-3">
+        <div className="-mx-4 flex flex-wrap justify-between">
+          {/* Logo & Description */}
+          <div className="px-4 my-4 w-full xl:w-1/5">
+            <a href="/" className="block mb-5">
+              <img
+                src="./images/Logo.png"
+                alt="Logo"
+                className="aspect-auto w-auto"
+              />
+            </a>
+            <p className="text-sm text-start">
+              We believe in the power of play to foster creativity,
+              problem-solving skills, and imagination.
             </p>
+          </div>
 
-            <address className="footer-address">
-              <h3 className="footer-sr">Contact Information</h3>
-
-              <div className="footer-contact-row">
-                <div className="footer-icon-box">
-                  <MdEmail className="footer-contact-icon" />
-                </div>
-                <a href="mailto:hello@littlelearners.com" className="footer-contact-link">
-                  hello@littlelearners.com
-                </a>
-              </div>
-
-              <div className="footer-contact-row">
-                <div className="footer-icon-box">
-                  <MdPhone className="footer-contact-icon" />
-                </div>
-                <a href="tel:+9191813232309" className="footer-contact-link">
-                  +91 91813 23 2309
-                </a>
-              </div>
-
-              <div className="footer-contact-row">
-                <div className="footer-icon-box">
-                  <MdLocationOn className="footer-contact-icon" />
-                </div>
-                <span className="footer-contact-text">Somewhere in the World</span>
-              </div>
-            </address>
-          </section>
-
-          {/* Navigation */}
-          <nav className="footer-nav" aria-label="Footer navigation">
-            <section>
-              <h3 className="footer-heading">Home</h3>
-              <ul className="footer-nav-list">
-                <li><a className="footer-nav-item-link" href="#">Features</a></li>
-                <li><a className="footer-nav-item-link" href="#">Our Testimonials</a></li>
-                <li><a className="footer-nav-item-link" href="#">FAQ</a></li>
-              </ul>
-            </section>
-
-            <section>
-              <h3 className="footer-heading">About Us</h3>
-              <ul className="footer-nav-list">
-                <li><a className="footer-nav-item-link" href="#">Our Mission</a></li>
-                <li><a className="footer-nav-item-link" href="#">Our Vision</a></li>
-                <li><a className="footer-nav-item-link" href="#">Awards and Recognitions</a></li>
-                <li><a className="footer-nav-item-link" href="#">History</a></li>
-                <li><a className="footer-nav-item-link" href="#">Teachers</a></li>
-              </ul>
-            </section>
-
-            <section>
-              <h3 className="footer-heading">Academics</h3>
-              <ul className="footer-nav-list">
-                <li><a className="footer-nav-item-link" href="#">Special Features</a></li>
-                <li><a className="footer-nav-item-link" href="#">Gallery</a></li>
-              </ul>
-            </section>
-
-            <section>
-              <h3 className="footer-heading">Contact Us</h3>
-              <ul className="footer-nav-list">
-                <li><a className="footer-nav-item-link" href="#">Information</a></li>
-                <li><a className="footer-nav-item-link" href="#">Map &amp; Direction</a></li>
-              </ul>
-            </section>
-          </nav>
-        </div>
-
-        {/* Bottom bar */}
-        <div className="footer-bottom">
-          <nav aria-label="Legal links">
-            <ul className="footer-legal-list">
-              <li className="text-center"><a className="footer-nav-item-link" href="#">Terms of Service</a></li>
-              <li className="text-center footer-legal-middle"><a className="footer-nav-item-link" href="#">Privacy Policy</a></li>
-              <li className="text-center"><a className="footer-nav-item-link" href="#">Cookie Policy</a></li>
+          <div className="px-4 my-4 w-full sm:w-auto">
+            <h2 className="inline-block text-2xl pb-4 mb-4 border-b-4 border-dark font-semibold">
+              Home
+            </h2>
+            <ul className="leading-8">
+              <li>
+                <a href="/">Our Benefits</a>
+              </li>
+              <li>
+                <a href="/">Our Testimonials</a>
+              </li>
+              <li>
+                <a href="/">Navigate through our Pages</a>
+              </li>
             </ul>
-          </nav>
+          </div>
 
-          <nav className="footer-social-list" aria-label="Social media links">
-            <a href="#" aria-label="Follow us on Facebook" className="footer-social-btn">
-              <FaFacebook className="footer-social-icon" />
-            </a>
-            <a href="#" aria-label="Follow us on Twitter" className="footer-social-btn">
-              <FaTwitter className="footer-social-icon" />
-            </a>
-            <a href="#" aria-label="Follow us on LinkedIn" className="footer-social-btn">
-              <FaLinkedin className="footer-social-icon" />
-            </a>
-          </nav>
-        </div>
+          <div className="px-4 my-4 w-full sm:w-auto">
+            <h2 className="inline-block text-2xl pb-4 mb-4 border-b-4 border-dark font-semibold">
+              About US
+            </h2>
+            <ul className="leading-8">
+              <li>
+                <a href="/">About Us</a>
+              </li>
+              <li>
+                <a href="/">OverView</a>
+              </li>
+              <li>
+                <a href="/">Our Mission & Vision</a>
+              </li>
+              <li>
+                <a href="/">Our Awards and Recognitions</a>
+              </li>
+            </ul>
+          </div>
+          {/* academic Links */}
+          <div className="px-4 my-4 w-full sm:w-auto">
+            <h2 className="inline-block text-2xl pb-4 mb-4 border-b-4 border-dark font-semibold ">
+              Academic
+            </h2>
+            <ul className="leading-8">
+              <li>
+                <a href="#">Our Special Features</a>
+              </li>
+              <li>
+                <a href="#">What Students Learn</a>
+              </li>
+              <li>
+                <a href="#">Our Rooms Gallery</a>
+              </li>
+              <li>
+                <a href="/">See More</a>
+              </li>
+            </ul>
+          </div>
 
-        <div className="footer-copy">
-          <small>© 2024 Little Learners. All rights reserved.</small>
+          {/* Social Icons */}
+          <div className="px-4 my-4 w-full sm:w-auto xl:w-1/5">
+            <h2 className="inline-block text-2xl pb-4 mb-4 border-b-4 border-dark font-semibold">
+              Connect With Us
+            </h2>
+            <div className="flex space-x-2">
+              <a
+                href="#"
+                className="inline-flex items-center justify-center h-8 w-8 border border-gray-300 rounded-full"
+              >
+                <FaFacebookF className="w-4 h-4" />
+              </a>
+              <a
+                href="#"
+                className="inline-flex items-center justify-center h-8 w-8 border border-gray-300 rounded-full hover:text-morning hover:border-morning"
+              >
+                <FaTwitter className="w-4 h-4" />
+              </a>
+              <a
+                href="#"
+                className="inline-flex items-center justify-center h-8 w-8 border border-gray-300 rounded-full hover:text-morning hover:border-morning"
+              >
+                <FaInstagram className="w-4 h-4" />
+              </a>
+              <a
+                href="#"
+                className="inline-flex items-center justify-center h-8 w-8 border border-gray-300 rounded-full hover:text-morning hover:border-morning"
+              >
+                <FaGithub className="w-4 h-4" />
+              </a>
+              <a
+                href="#"
+                className="inline-flex items-center justify-center h-8 w-8 border border-gray-300 rounded-full hover:text-morning hover:border-morning"
+              >
+                <FaYoutube className="w-4 h-4" />
+              </a>
+            </div>
+          </div>
         </div>
-      </footer>
+        {/* Bottom Section */}
+        <div className="border-t border-gray-300 py-4 text-dark">
+          <div className="container mx-auto px-4">
+            <div className="-mx-4 flex flex-wrap justify-between">
+              <div className="px-4 w-full text-center sm:w-auto sm:text-left">
+                Copyright © {new Date().getFullYear()} ITI. All Rights Reserved.
+              </div>
+              <div className="px-4 w-full text-center sm:w-auto sm:text-left">
+                Made with ❤️ by AATH.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   );
-};
-
-export default Footer;
+}
