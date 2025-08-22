@@ -14,6 +14,19 @@
     font-family: "Outfit", sans-serif;
   }
 
+
+  @layer components {
+    .hero-card {
+      @apply flex flex-col sm:flex-row items-center justify-between text-base md:text-lg font-semibold text-dark w-full max-w-2xl mt-6 md:mt-4 lg:mt-8 bg-orange py-4 md:py-2 lg:py-6 px-4 md:px-8 lg:px-12 border-2 border-dark rounded-xl shadow-[6px_6px_0px_rgba(255,190,153,1)] gap-4 sm:gap-0;
+    }
+    .hero-span {
+      @apply text-base md:text-xs font-bold text-center;
+    }
+    .box-shadow{
+      @apply [box-shadow:6px_6px_0_black]
+    }
+    
+
   .banner-cover {
     background-image: url("./images/TopBanner.png");
   }
@@ -31,10 +44,33 @@ button:hover {
   }
 }
 
+
+  /* Hide scrollbar for Chrome, Safari and Opera */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;  /* IE + Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
 @theme {
   --color-dark: #262626;
   --color-morning: #ff8d4d;
   --color-liteMorning: #ffae80;
   --color-light: #fff5f0;
   --color-orange: #ffefe5;
+}
 }
