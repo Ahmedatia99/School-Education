@@ -21,12 +21,12 @@ const FAQ: React.FC<FAQProps> = ({ questions }) => {
 
   return (
     <section>
-      <div className="flex flex-col gap-3 transition-all">
+      <div className="flex flex-col gap-3 transition-all ">
         {questions?.length > 0 ? (
           questions.map((el) => (
             <div
               key={el.id}
-              className={`px-3 py-5 border-2 border-dark rounded-lg bg-orange shadow-lg ${
+              className={`px-3 py-5 border-[3px]  rounded-sm bg-orange border-dark shadow-[6px_6px_0px_rgba(0,0,0,1)]${
                 visibleIndex === el.id ? "!bg-white" : ""
               }`}
             >
@@ -40,17 +40,17 @@ const FAQ: React.FC<FAQProps> = ({ questions }) => {
                   aria-label={
                     visibleIndex === el.id ? "Collapse answer" : "Expand answer"
                   }
-                  className="transition-all p-2 rounded-md "
+                  className="transition-all p-2 rounded-md hover:bg-transparent"
                 >
                   {visibleIndex === el.id ? (
                     <FaMinus
                       size={25}
-                      className="md:ml-8 mobile:ml-3 cursor-pointer rounded-md text-dark p-1.5 border-2 border-dark bg-light"
+                      className="md:ml-8 mobile:ml-3 cursor-pointer rounded-md text-dark p-1.5 border-[3px] border-dark bg-light hover:bg-transparent"
                     />
                   ) : (
                     <FaPlus
                       size={25}
-                      className="md:ml-8 mobile:ml-3 rounded-md cursor-pointer text-dark p-1.5 border-2 border-dark bg-light"
+                      className="md:ml-8 mobile:ml-3 rounded-md cursor-pointer text-dark p-1.5 border-[3px] border-dark bg-light hover:bg-transparent"
                     />
                   )}
                 </button>

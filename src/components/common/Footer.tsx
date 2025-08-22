@@ -9,7 +9,7 @@ import {
 export default function Footer() {
   return (
     <footer className="px-3">
-      <div className="container p-8 mx-auto bg-white text-dark rounded-xl border-2 border-dark shadow-[6px_6px_0px_rgba(0,0,0,1)] mb-3">
+      <div className="container p-8 mx-auto bg-white text-dark rounded-xs border-[3px] border-dark shadow-[6px_6px_0px_rgba(0,0,0,1)] mb-3">
         <div className="-mx-4 flex flex-wrap justify-between">
           {/* Logo & Description */}
           <div className="px-4 my-4 w-full xl:w-1/5">
