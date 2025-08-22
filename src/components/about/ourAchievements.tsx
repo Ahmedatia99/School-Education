@@ -69,7 +69,7 @@ function OurAchievements() {
           <BoxPhotoInPosition boxes={[BoxesData[index]]} />
         </div>
         <div className="our-achievements flex flex-col sm:flex-row items-center justify-between w-full gap-5 mt-4 ">
-          <span className="font-bold font-medium sm:text-[18px]">
+          <span className="font-medium sm:text-[18px]">
             8 More Awards
           </span>
           <div className="flex gap-5 ">
