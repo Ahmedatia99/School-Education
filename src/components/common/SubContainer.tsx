@@ -14,8 +14,9 @@ function SubContainer({ btnText, h2Text, pText }: SubContainerParams) {
       <h2 className="font-semibold text-xl  sm:text-[38px]  text-center mt-3">
         {h2Text}
       </h2>
-      <p className="font-medium text-center text-[16px] w-[80%]">{pText}</p>
-
+      <p className="font-medium text-dark text-center text-[16px] w-[80%]">
+        {pText}
+      </p>
     </div>
   );
 }

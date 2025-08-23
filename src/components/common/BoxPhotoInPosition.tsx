@@ -11,11 +11,7 @@ function BoxPhotoInPosition({ boxes }: BoxPhotoInPositionPraams) {
       {boxes.map((box, index) => (
         <div
           key={index}
-<<<<<<< HEAD
-          className="achievement-box relative  flex flex-col items-start gap-5 p-2 sm:p-8 pt-10 mt-[30px]  border-2 rounded-2xl w-full [box-shadow:5px_5px_0_black] bg-white"
-=======
           className="achievement-box relative flex flex-col items-start gap-5 p-2 sm:p-8 pt-10 mt-[30px] border-[3px] rounded-md w-full [box-shadow:5px_5px_0_black] bg-white"
->>>>>>> ce70809d6b058a3e3347290e86980cf0ced3fb7e
         >
           <div>
             <box.icon
