@@ -15,6 +15,7 @@ function SubContainer({ btnText, h2Text, pText }: SubContainerParams) {
         {h2Text}
       </h2>
       <p className="font-medium text-center text-[16px] w-[80%]">{pText}</p>
+
     </div>
   );
 }
