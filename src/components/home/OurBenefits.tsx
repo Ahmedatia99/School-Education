@@ -9,21 +9,39 @@ function OurBenefits() {
   const BoxesData = [
     {
       icon: GiPieChart,
-      h3Text: "Outstanding Early Childhood Education Awar",
+      h3Text: "Holistic Learning Approach",
       pText:
-        "Presented by the National Association for the Education of Young Children (NAEYC) in recognition of Little Learners Academy's commitment to delivering exceptional early childhood education and fostering a nurturing learning environment.",
+        "Our curriculum focuses on nurturing cognitive, social, emotional, and physical development, ensuring a well-rounded education.",
     },
     {
       icon: GiNetworkBars,
-      h3Text: "Innovative STEAM Education Award",
+      h3Text: "Experienced Educators",
       pText:
-        "Awarded by the Education Excellence Association for our pioneering efforts in introducing innovative STEAM (Science, Technology, Engineering, Arts, and Mathematics) programs that ignite creativity and critical thinking in young learners.",
+        "Our passionate and qualified teachers create a supportive and stimulating learning environment.",
     },
     {
       icon: MdElectricBolt,
-      h3Text: "Outstanding Early Childhood Education Award",
+      h3Text: "Nurturing Environment",
       pText:
-        "Presented by the National Association for the Education of Young Children (NAEYC) in recognition of Little Learners Academy's commitment to delivering exceptional early childhood education and fostering a nurturing learning environment.",
+        "We prioritize safety and provide a warm and caring atmosphere for every child.",
+    },
+    {
+      icon: MdElectricBolt,
+      h3Text: "Play-Based Learning",
+      pText:
+        "We believe in the power of play to foster creativity, problem-solving skills, and imagination.",
+    },
+    {
+      icon: MdElectricBolt,
+      h3Text: "Individualized Attention",
+      pText:
+        "Our small class sizes enable personalized attention, catering to each child's unique needs.",
+    },
+    {
+      icon: MdElectricBolt,
+      h3Text: "Parent Involvement",
+      pText:
+        "We foster a strong parent-school partnership to ensure seamless communication and collaboration.",
     },
   ];
   return (
@@ -33,7 +51,7 @@ function OurBenefits() {
         h2Text="Our Benefits"
         pText="With a dedicated team of experienced educators, state-of-the-art facilities, and a comprehensive curriculum, we aim to lay a strong foundation for your child's future."
       />
-      <div className="flex flex-col md:flex-row items-stretch w-full gap-5 md:gap-10 mt-10 px-5">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 px-3">
         <BoxPhotoInPosition boxes={BoxesData} />
       </div>
     </section>

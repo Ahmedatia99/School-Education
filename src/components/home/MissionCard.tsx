@@ -34,7 +34,7 @@ function MissionCard() {
       {cards.map((item) => (
         <div
           key={item.id}
-          className="p-10 flex flex-col items-center border-4 border-dark bg-light shadow-[6px_6px_0px_rgba(0,0,0,1)] max-w-md w-full"
+          className="p-10 flex flex-col items-center border-[3px] border-dark bg-light shadow-[6px_6px_0px_rgba(0,0,0,1)] max-w-md w-full"
         >
           <div className="flex flex-col items-center">
             <h3 className="text-4xl font-semibold text-dark">{item.title}</h3>

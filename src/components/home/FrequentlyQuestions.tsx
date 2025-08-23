@@ -87,14 +87,14 @@ const FrequentlyQuestions = () => {
         />
         <div className="flex justify-center items-center gap-5 max-sm:gap-4 relative z-20 h-full max-sm:flex-col">
           {/* Sidebar Categories */}
-          <div className="bg-orange text-gray-700 max-w-80 p-5 flex flex-col items-center gap-5 relative">
+          <div className="bg-orange text-gray-700 max-w-80 p-5 flex flex-col items-center gap-5 relative border-[3px] border-dark shadow-[6px_6px_0px_rgba(0,0,0,1)]">
             {mainQuestion.map((el) => (
               <a
                 key={el.id}
                 onClick={() => setClicked(Number(el.id))}
                 className={`hover:scale-105 p-2 cursor-pointer transition-all ${
                   clicked === Number(el.id)
-                    ? "border-2 rounded-lg shadow-md border-dark font-bold scale-105 bg-light"
+                    ? "border-[3px] rounded-xs font-bold scale-105 bg-light border-dark shadow-[6px_6px_0px_rgba(0,0,0,1)]"
                     : "scale-100"
                 }`}
               >

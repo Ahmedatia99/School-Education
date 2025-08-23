@@ -15,6 +15,7 @@ const Footer: React.FC = () => {
             <section className="flex-1 max-w-xl text-center md:text-left" aria-labelledby="company-info">
               <h2 id="company-info" className="sr-only">Company Information</h2>
 
+
               <img src={logo} alt="Little Learners Logo" className="w-44 mx-auto md:mx-0"/>
               <p className="mt-4 font-medium leading-relaxed text-center md:text-left"
                  style={{color: '#4C4C4D'}}>
