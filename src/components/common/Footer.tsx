@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
   return (
       <div className="container px-3 mx-auto">
         <footer
-            className="bg-white border-2 border-dark rounded-xl shadow-[6px_6px_0_var(--color-dark)] p-6 md:p-10 lg:p-14 flex flex-col gap-7 mt-25 mb-15"
+            className="bg-white border-2 border-dark rounded-xs shadow-[6px_6px_0_var(--color-dark)] p-6 md:p-10 lg:p-14 flex flex-col gap-7 mt-25 mb-15"
             role="contentinfo" aria-label="Site footer">
           {/* Top: Brand + Nav */}
           <div className="flex flex-col md:flex-row items-start justify-between gap-10">
