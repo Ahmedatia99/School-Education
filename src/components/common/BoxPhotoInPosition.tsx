@@ -11,11 +11,15 @@ function BoxPhotoInPosition({ boxes }: BoxPhotoInPositionPraams) {
       {boxes.map((box, index) => (
         <div
           key={index}
+<<<<<<< HEAD
           className="achievement-box relative  flex flex-col items-start gap-5 p-2 sm:p-8 pt-10 mt-[30px]  border-2 rounded-2xl w-full [box-shadow:5px_5px_0_black] bg-white"
+=======
+          className="achievement-box relative flex flex-col items-start gap-5 p-2 sm:p-8 pt-10 mt-[30px] border-[3px] rounded-md w-full [box-shadow:5px_5px_0_black] bg-white"
+>>>>>>> ce70809d6b058a3e3347290e86980cf0ced3fb7e
         >
           <div>
             <box.icon
-              className="icon absolute top-0 left-5 rounded-lg -translate-y-1/2 p-4 w-16 h-16 border-3 "
+              className="icon absolute top-0 left-5 rounded-lg -translate-y-1/2 p-4 w-16 h-16 border-[3px]"
               style={{ backgroundColor: "#FFDECC" }}
             />
           </div>

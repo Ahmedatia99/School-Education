@@ -14,7 +14,7 @@ function Hero() {
       </div>
       <div className="w-full md:w-1/2 flex flex-col items-center md:items-start">
         <div className="w-full flex items-center justify-center md:justify-start mb-4">
-          <h4 className="text-lg md:text-xl font-semibold border-b-2 border-dark-300 max-w-[350px] pl-2">
+          <h4 className="text-lg md:text-xl font-semibold border-b-2 border-dark-300 max-w-[400px] pl-2">
             Welcome to Little Learners Academy
           </h4>
         </div>
