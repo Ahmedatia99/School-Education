@@ -22,11 +22,11 @@ export default function StudentsLearn({ students }: StudentsLearnProps) {
           {students.map((student) => (
             <div
               key={student.Title}
-              className="relative border-2 border-black bg-white rounded-xl shadow  transform transition-transform duration-200 hover:scale-102"
+              className="relative border-2 border-black bg-white rounded-sm shadow  transform transition-transform duration-200 hover:scale-102"
             >
               <div className="flex justify-center items-center relative">
                 <img
-                  className="z-2 p-7 h-full rounded-xl "
+                  className="z-2 p-7 h-full rounded-sm "
                   src={student.img}
                   alt=""
                 />

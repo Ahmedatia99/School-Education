@@ -129,7 +129,7 @@ export default function RoomGallery() {
               <button
                 key={cat}
                 onClick={() => setFilter(cat)}
-                className={`shrink-0 px-4 py-2 border-2 rounded-lg font-semibold transition
+                className={`shrink-0 px-4 py-2 border-2 rounded-sm font-semibold transition cursor-pointer
         ${
           filter === cat
             ? "bg-[#FFEFE5] text-black"
@@ -149,7 +149,7 @@ export default function RoomGallery() {
             {filteredData.map((item) => (
               <div
                 key={item.id}
-                className=" relative flex flex-col mt-[180px]  box-shadow  items-center  w-full h-full border-2  bg-white  rounded-xl   transition  "
+                className=" relative flex flex-col mt-[180px]  box-shadow  items-center  w-full h-full border-2  bg-white  rounded-sm transition  "
               >
                 {/* images grid inside card */}
                 <div className=" w-[90%]  absolute  transform -translate-y-1/2">
@@ -160,7 +160,7 @@ export default function RoomGallery() {
                         key={i}
                         src={img}
                         alt={`${item.title} ${i}`}
-                        className="w-[100%] h-full object-cover rounded-xl hover:scale-105 transition border-1 "
+                        className="w-[100%] h-full object-cover rounded-sm hover:scale-105 transition border-1 "
                       />
                     ))}
                   </div>
@@ -170,7 +170,7 @@ export default function RoomGallery() {
                     <img
                       src={item.image[currentIndex[item.id] ?? 0]}
                       alt={item.title}
-                      className="w-[100%] h-full object-cover rounded-2xl  border-1"
+                      className="w-[100%] h-full object-cover rounded-sm  border-1"
                     />
                   </div>
                 </div>
@@ -181,13 +181,13 @@ export default function RoomGallery() {
                     <div className="flex justify-center mt-3  gap-3 ">
                       <button
                         onClick={() => handlePrev(item.id, item.image.length)}
-                        className="p-4  bg-white rounded-lg border-2 hover:bg-amber-400 transition duration-300 cursor-pointer"
+                        className="p-4  bg-white rounded-sm border-2 hover:bg-amber-400 transition duration-300 cursor-pointer"
                       >
                         <FaArrowLeft size={24} className="text-black" />{" "}
                       </button>
                       <button
                         onClick={() => handleNext(item.id, item.image.length)}
-                        className="p-4  bg-white rounded-lg border-2 hover:bg-amber-400 transition duration-300 cursor-pointer"
+                        className="p-4  bg-white rounded-sm border-2 hover:bg-amber-400 transition duration-300 cursor-pointer"
                       >
                         <FaArrowRight size={24} className="text-black" />{" "}
                       </button>

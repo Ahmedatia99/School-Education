@@ -10,7 +10,7 @@ type CardParams = {
 };
 function TeamMemberCard({ imgSrc, name, h3text, ptext }: CardParams) {
   return (
-    <div className=" team-member-card flex flow-col gap-10  bg-white border-2 rounded-xl w[box-shadow:5px_5px_0_black]">
+    <div className=" team-member-card flex flow-col gap-10  bg-white border-2 rounded-sm w[box-shadow:5px_5px_0_black]">
       <div className="box flex flex-col p-2 sm:p-5 gap-5 w-full">
         <div className="box-top flex flex-col sm:flex-row justify-between w-full">
           <div className="flex flex-col sm:flex-row gap-3 items-center">
@@ -22,13 +22,14 @@ function TeamMemberCard({ imgSrc, name, h3text, ptext }: CardParams) {
           <div className="top-right flex items-center justify-center">
             <div className="w-10 sm:w-15 ">
               <IoIosMail
-                className="w-full h-full  rounded-md border-3 "
+                className="p-1  rounded-sm border-3 "
+                size={50}
                 style={{ backgroundColor: "#FFDECC" }}
               />
             </div>
           </div>
         </div>
-        <div className="box-bottom flex flex-col p-2 sm:p-5 gap-5 border-2 rounded-xl bg-light">
+        <div className="box-bottom flex flex-col p-2 sm:p-5 gap-5 border-2 rounded-sm bg-light">
           <h3 className="font-semibold text-[12px] sm:text-[20px]">
             {h3text}{" "}
           </h3>
@@ -44,7 +45,7 @@ function TeamMembers() {
       <SubContainer
         btnText="Our Teachers With Experties"
         h2Text="Our Team Members"
-        pText="At Little Learners Academy, our teaching team is the heart of our educational journey. We take great pride in employing highly qualified and passionate educators who possess a deep understanding of early childhood development. Our teachers create a warm and engaging atmosphere, encouraging curiosity, instilling confidence, and fostering a love for learning."
+        pText="At Little Learners Academy, our teaching team is the heart of our educational journey. We take great pride in employing highly qualified and passionate educators who possess a deep understanding of early childhood development."
       />
       <div className="teamMembers grid grid-cols-1 md:grid-cols-2 gap-20 md:gap-8">
         <TeamMemberCard

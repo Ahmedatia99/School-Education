@@ -53,7 +53,7 @@ function OurAchievements() {
       <SubContainer
         btnText="Our Achievements"
         h2Text="Our Awards and Recognitions"
-        pText="Little Learners Academy takes pride in our commitment to delivering high-quality education and outstanding student experiences. We are honored to have received various awards and recognitions for our dedication to early childhood education. These accolades reflect our team's relentless efforts in creating an exceptional learning environment for our students."
+        pText="Little Learners Academy takes pride in our commitment to delivering high-quality education and outstanding student experiences. "
       />
       <div className="flex flex-col items-cente w-full">
         <div className="hidden gap-5 md:flex md:flex-row xl:mx-5 md:mx-0 ">
@@ -74,10 +74,10 @@ function OurAchievements() {
           </span>
           <div className="flex gap-5 ">
             <button onClick={backArrowOnClickHandler}>
-              <FaArrowLeft className="w-14 h-14 p-4 border-3 rounded-md bg-white hover:bg-[#fff5f0]" />
+              <FaArrowLeft className="w-14 h-14 p-4 border-3 rounded-sm bg-white hover:bg-[#fff5f0] cursor-pointer" />
             </button>
             <button onClick={nextArrowOnClickHandler}>
-              <FaArrowRight className="w-14 h-14 p-4 border-3 rounded-md bg-white hover:bg-[#fff5f0]" />
+              <FaArrowRight className="w-14 h-14 p-4 border-3 rounded-sm bg-white hover:bg-[#fff5f0] cursor-pointer" />
             </button>
           </div>
         </div>

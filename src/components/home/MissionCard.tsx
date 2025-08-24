@@ -30,7 +30,7 @@ function MissionCard() {
     },
   ];
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10 max-w-5xl mx-auto pb-20 ">
+    <div className="mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 mt-10 max-w-5xl pb-20 ">
       {cards.map((item) => (
         <div
           key={item.id}
@@ -39,11 +39,11 @@ function MissionCard() {
           <div className="flex flex-col items-center">
             <h3 className="text-4xl font-semibold text-dark">{item.title}</h3>
             <SectionDivider type="lines" />
-            <p className="text-sm text-gray-700 text-center">
+            <p className="text-sm text-gray-700 text-center max-w-xs">
               {item.description}
             </p>
           </div>
-          <button className="cursor-pointer mt-20 px-4 py-2 border-2 w-full border-dark bg-mini shadow-[5px_5px_0px_rgba(0,0,0,1)] rounded-lg font-semibold">
+          <button className="cursor-pointer mt-5 px-4 py-2 border-2 w-full border-dark bg-mini shadow-[5px_5px_0px_rgba(0,0,0,1)] rounded-lg font-semibold">
             Learn More <FaArrowRightLong className="inline" />
           </button>
         </div>

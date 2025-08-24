@@ -38,7 +38,7 @@ const Navbar: React.FC = () => {
               <li
                 className={`p-3 h-full  ${
                   location.pathname === item.to
-                    ? "bg-liteMorning rounded-md"
+                    ? "bg-liteMorning rounded-sm"
                     : ""
                 }`}
                 key={item.to}
@@ -65,7 +65,7 @@ const Navbar: React.FC = () => {
                   <li
                     className={`p-5 ${
                       location.pathname === item.to
-                        ? "bg-liteMorning rounded-md"
+                        ? "bg-liteMorning rounded-sm"
                         : ""
                     }`}
                     key={item.to}

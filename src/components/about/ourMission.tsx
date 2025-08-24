@@ -17,7 +17,7 @@ function ourMission() {
       <div className=" our-mission flex flex-col md:flex-row gap-10 xl:mx-5 md:mx-0 ">
         {/* Mid Container */}
 
-        <div className="flex flex-col p-3 sm:p-10 w-full gap-10  border-2 rounded-2xl [box-shadow:5px_5px_0_black] bg-white">
+        <div className="flex flex-col p-3 sm:p-10 w-full gap-10  border-2 rounded-sm [box-shadow:5px_5px_0_black] bg-white">
           {/* Mid Container Top */}
 
           <div className="flex flex-col sm:flex-row justify-between items-center  sm:text-start  gap-5 text-center">
@@ -40,7 +40,7 @@ function ourMission() {
 
         {/* Bottom Container */}
 
-        <div className="flex flex-col p-3 sm:p-10 w-full gap-10  border-2 rounded-2xl [box-shadow:5px_5px_0_black] bg-white  ">
+        <div className="flex flex-col p-3 sm:p-10 w-full gap-10  border-2 rounded-sm [box-shadow:5px_5px_0_black] bg-white  ">
           {/* Bottom Container Top */}
 
           <div className="flex flex-col sm:flex-row justify-between items-center  sm:text-start  gap-5 text-center">

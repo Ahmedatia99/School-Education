@@ -8,9 +8,9 @@ const HeroSection = ({ HeroBtn, HeroH, HeroP }: HeroSectionParams) => {
         <img
           src="/assets/Abstract-Design.png"
           alt="Kids"
-          className="absolute top-0 left-0 w-[30%] sm:w-[25%] md:w-[20%] lg:w-[150px] rounded-lg "
+          className="absolute top-0 left-0 w-[30%] sm:w-[25%] md:w-[20%] lg:w-[150px] rounded-sm "
         />
-        <button className="border-2 rounded-lg px-4 py-2  font-bold text-center">
+        <button className="border-2 rounded-sm px-4 py-2  font-bold text-center">
           {HeroBtn}
         </button>
         <h1 className="text-[28px] font-bold text-center md:text-[38px] md:text-start ">

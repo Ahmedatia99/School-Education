@@ -40,17 +40,17 @@ const FAQ: React.FC<FAQProps> = ({ questions }) => {
                   aria-label={
                     visibleIndex === el.id ? "Collapse answer" : "Expand answer"
                   }
-                  className="transition-all p-2 rounded-md hover:bg-transparent"
+                  className="transition-all p-2 rounded-sm hover:bg-transparent"
                 >
                   {visibleIndex === el.id ? (
                     <FaMinus
                       size={25}
-                      className="md:ml-8 mobile:ml-3 cursor-pointer rounded-md text-dark p-1.5 border-[3px] border-dark bg-light hover:bg-transparent"
+                      className="md:ml-8 mobile:ml-3 cursor-pointer rounded-sm text-dark p-1.5 border-[3px] border-dark bg-light hover:bg-transparent"
                     />
                   ) : (
                     <FaPlus
                       size={25}
-                      className="md:ml-8 mobile:ml-3 rounded-md cursor-pointer text-dark p-1.5 border-[3px] border-dark bg-light hover:bg-transparent"
+                      className="md:ml-8 mobile:ml-3 rounded-sm cursor-pointer text-dark p-1.5 border-[3px] border-dark bg-light hover:bg-transparent"
                     />
                   )}
                 </button>
