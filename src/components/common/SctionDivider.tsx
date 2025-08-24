@@ -10,7 +10,7 @@ export default function SectionDivider({
   type = "lines",
 }: SectionDividerProps) {
   return (
-    <div className="flex items-center justify-center gap-2 my-4">
+    <div className="flex items-center justify-center gap-2 my-4  bg">
       {/* Left circle */}
       <span className="w-3 h-3 rounded-full border-2 border-black"></span>
 
@@ -19,7 +19,10 @@ export default function SectionDivider({
         {Array.from({ length: 6 }).map((_, i) => {
           if (type === "lines") {
             return (
-              <span key={i} className="w-8 h-1 bg-orange-400 rounded"></span>
+              <span
+                key={i}
+                className="w-2 md:w-5 h-1 bg-orange-400 rounded"
+              ></span>
             );
           }
           if (type === "dots") {
