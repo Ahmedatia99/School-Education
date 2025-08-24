@@ -1,21 +1,24 @@
 * [33m18d32f9[m[33m ([m[1;31morigin/amr[m[33m)[m finish About Page
 * [33m0bb8bb0[m Added Our Team Members Section To About Page
-*   [33m0f091be[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m Merge pull request #4 from Ahmedatia99/home-page
-[32m|[m[33m\[m  
-[32m|[m *   [33m575b377[m[33m ([m[1;31morigin/home-page[m[33m)[m Merge branch 'main' into home-page
-[32m|[m [34m|[m[32m\[m  
-[32m|[m [34m|[m[32m/[m  
-[32m|[m[32m/[m[34m|[m   
-* [34m|[m   [33m192eb3d[m Merge pull request #3 from Ahmedatia99/amr
-[36m|[m[1;31m\[m [34m\[m  
+* [33m0f091be[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m Merge
+pull request #4 from Ahmedatia99/home-page
+[32m|[m[33m\[m
+[32m|[m * [33m575b377[m[33m ([m[1;31morigin/home-page[m[33m)[m Merge branch 'main' into home-page
+[32m|[m [34m|[m[32m\[m
+[32m|[m [34m|[m[32m/[m
+[32m|[m[32m/[m[34m|[m
+* [34m|[m [33m192eb3d[m Merge pull request #3 from Ahmedatia99/amr
+[36m|[m[1;31m\[m [34m\[m
 [36m|[m * [34m|[m [33m1b153d0[m Home Page Componnents
 [36m|[m [1;31m|[m * [33m6bfe988[m add Navbar && add banner with responsive
 [36m|[m [1;31m|[m * [33ma650395[m add some changes in navbar
-[36m|[m [1;31m|[m[36m/[m  
-[36m|[m[36m/[m[1;31m|[m   
-[36m|[m [1;31m|[m * [33m80dca29[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mfeature/footer-new[m[33m, [m[1;31morigin/feature/footer[m[33m, [m[1;32mfeature/footer[m[33m)[m Implement footer and update related components
-[36m|[m [1;31m|[m[1;31m/[m  
+[36m|[m [1;31m|[m[36m/[m
+[36m|[m[36m/[m[1;31m|[m
+[36m|[m [1;31m|[m * [33m80dca29[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mfeature/footer-new[m[33m,
+[m[1;31morigin/feature/footer[m[33m, [m[1;32mfeature/footer[m[33m)[m Implement footer and update related
+components
+[36m|[m [1;31m|[m[1;31m/[m
 [36m|[m * [33m0acd8d1[m about Page
-[36m|[m[36m/[m  
+[36m|[m[36m/[m
 * [33m2132e14[m add structure directry
 * [33m4104182[m[33m ([m[1;32mhomepage[m[33m)[m add structure project
