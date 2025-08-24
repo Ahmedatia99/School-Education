@@ -1,6 +1,8 @@
 import React from "react";
 import SubContainer from "./../common/SubContainer";
 import OurTestimonialsCard from "./OurTestimonialsCard";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 function OurTestimonials() {
   const data = [
@@ -22,16 +24,34 @@ function OurTestimonials() {
       rate: 5,
       info: "The curriculum at Little Learners Academy is both fun and educational. My daughter loves her teachers and has made so many friends!",
     },
+    {
+      img: "/images/person-3.png",
+      name: "Emily R",
+      rate: 5,
+      info: "The curriculum at Little Learners Academy is both fun and educational. My daughter loves her teachers and has made so many friends!",
+    },
+    {
+      img: "/images/person-3.png",
+      name: "Emily R",
+      rate: 5,
+      info: "The curriculum at Little Learners Academy is both fun and educational. My daughter loves her teachers and has made so many friends!",
+    },
+    {
+      img: "/images/person-3.png",
+      name: "Emily R",
+      rate: 5,
+      info: "The curriculum at Little Learners Academy is both fun and educational. My daughter loves her teachers and has made so many friends!",
+    },
   ];
 
   return (
-    <section className=" container mx-auto px-3 py-12 bg-light">
+    <section className=" container mx-auto  py-12 bg-light">
       <SubContainer
         btnText="Their Happy Words 🤗"
         h2Text="Our Testimonials"
         pText="Our testimonials are heartfelt reflections of the nurturing environment we provide, where children flourish both academically and emotionally."
       />
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+      <div className="slider-container">
         <OurTestimonialsCard data={data} />
       </div>
     </section>
