@@ -75,14 +75,13 @@ const settings = {
 
 function OurTestimonialsCard({
   data,
-  containerClassName = "",
 }: BoxPhotoInPositionProps) {
   return (
     <Slider {...settings}>
       {data.map((item, index) => (
         <div className="px-2" key={index}>
           <div
-            className={`!h-96 flex flex-col items-center gap-5 p-8  border-[3px] rounded-xs w-full shadow-[6px_6px_0px_rgba(0,0,0,1)] bg-white ${containerClassName}`}
+            className={`!h-96 flex flex-col items-center gap-5 p-8  border-[3px] rounded-xs w-full shadow-[6px_6px_0px_rgba(0,0,0,1)] bg-white`}
           >
             <img
               src={item.img}

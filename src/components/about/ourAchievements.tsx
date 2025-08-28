@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import SubContainer from "../common/SubContainer";
 import BoxPhotoInPosition from "../common/BoxPhotoInPosition";
 import { GiNetworkBars } from "react-icons/gi";
