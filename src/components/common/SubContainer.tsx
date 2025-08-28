@@ -1,4 +1,3 @@
-import React from "react";
 type SubContainerParams = {
   btnText: string;
   h2Text: string;

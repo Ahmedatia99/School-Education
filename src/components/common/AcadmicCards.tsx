@@ -1,5 +1,3 @@
-import React from "react";
-
 // تعريف النوع
 type Student = {
   Title: string;

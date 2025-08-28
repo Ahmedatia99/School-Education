@@ -1,4 +1,3 @@
-import React from "react";
 import HeroImage from "/images/Image-Container.png";
 function Hero() {
   const numCards =

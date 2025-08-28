@@ -1,4 +1,3 @@
-import React from "react";
 import SubContainer from "../common/SubContainer";
 import Slearn1 from "../../../assets/Slearn1.png";
 import Slearn2 from "../../../assets/Slearn2.png";
@@ -48,7 +47,6 @@ const studentsData = [
     SubTitle: "Promoting physical fitness, coordination, and teamwork.",
     line: "column",
   },
-  
 ];
 
 function StudentsLearn() {

@@ -1,4 +1,3 @@
-import React from "react";
 import SubContainer from "./../common/SubContainer";
 import OurTestimonialsCard from "./OurTestimonialsCard";
 import "slick-carousel/slick/slick.css";

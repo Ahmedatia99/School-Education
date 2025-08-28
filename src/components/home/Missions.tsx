@@ -1,6 +1,5 @@
-import React from "react";
 import SubContainer from "./../common/SubContainer";
-import MissionCard from './MissionCard';
+import MissionCard from "./MissionCard";
 function Missions() {
   return (
     <section className="container mx-auto px-4">

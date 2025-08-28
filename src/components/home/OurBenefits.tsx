@@ -1,4 +1,3 @@
-import React from "react";
 import BoxPhotoInPosition from "../common/BoxPhotoInPosition";
 import SubContainer from "../common/SubContainer";
 import { GiNetworkBars } from "react-icons/gi";

@@ -1,18 +1,17 @@
-import React from "react";
 import logo from "/images/Logo.png";
 import { MdEmail, MdPhone, MdLocationOn } from "react-icons/md";
 import { FaFacebook, FaTwitter, FaLinkedin } from "react-icons/fa";
 
 const Footer: React.FC = () => {
   return (
-    <div className="w-full px-1 sm:px-3 mx-auto">
+    <div className="w-full px-2 sm:px-4 mx-auto">
       <footer
         className="bg-white font-semibold border-2 border-dark rounded-xs shadow-[6px_6px_0_var(--color-dark)] p-2 sm:p-6 md:p-10 lg:p-14 flex flex-col gap-4 sm:gap-7 mt-10 mb-5"
         role="contentinfo"
         aria-label="Site footer"
       >
         {/* Top: Brand + Nav */}
-        <div className="flex flex-col md:flex-row items-start justify-between gap-4 sm:gap-10 w-full">
+        <div className="flex flex-col md:flex-row flex-wrap items-start justify-between gap-4 sm:gap-10 w-full">
           {/* Brand/Company info */}
           <section
             className="flex-1 w-full max-w-full sm:max-w-xl text-center md:text-left"
@@ -44,7 +43,7 @@ const Footer: React.FC = () => {
                 </div>
                 <a
                   href="mailto:hello@littlelearners.com"
-                  className="font-medium hover:underline text-xs xs:text-sm sm:text-base"
+                  className="font-medium hover:underline text-xs xs:text-sm sm:text-base break-all"
                 >
                   hello@littlelearners.com
                 </a>
@@ -75,17 +74,15 @@ const Footer: React.FC = () => {
 
           {/* Navigation */}
           <nav
-            className="flex-1 w-full grid grid-cols-1 xs:grid-cols-2 lg:grid-cols-4 gap-2 xs:gap-4 lg:gap-8 place-self-center lg:place-self-start"
+            className="flex-1 w-full grid grid-cols-2 md:grid-cols-4 gap-2 sm:gap-4 lg:gap-8 place-self-center lg:place-self-start"
             aria-label="Footer navigation"
           >
             <section>
-              <h3 className="text-xs xs:text-sm sm:text-lg font-semibold">
-                Home
-              </h3>
+              <h3 className="text-lg  md:text-xl font-bold">Home</h3>
               <ul className="mt-2 sm:mt-4 space-y-1 sm:space-y-2">
                 <li>
                   <a
-                    className="hover:text-dark text-xs xs:text-sm sm:text-base"
+                    className="hover:text-dark text-sm "
                     style={{ color: "#333333" }}
                     href="#"
                   >
@@ -94,7 +91,7 @@ const Footer: React.FC = () => {
                 </li>
                 <li>
                   <a
-                    className="hover:text-dark"
+                    className="hover:text-dark text-sm"
                     style={{ color: "#333333" }}
                     href="#"
                   >
@@ -103,7 +100,7 @@ const Footer: React.FC = () => {
                 </li>
                 <li>
                   <a
-                    className="hover:text-dark"
+                    className="hover:text-dark text-sm"
                     style={{ color: "#333333" }}
                     href="#"
                   >
@@ -114,8 +111,8 @@ const Footer: React.FC = () => {
             </section>
 
             <section>
-              <h3 className="text-lg font-semibold">About Us</h3>
-              <ul className="mt-4 space-y-2">
+              <h3 className="text-lg  md:text-xl font-bold">About Us</h3>
+              <ul className="mt-2 sm:mt-4 space-y-1 sm:space-y-2">
                 <li>
                   <a
                     className="hover:text-dark"
@@ -134,39 +131,12 @@ const Footer: React.FC = () => {
                     Our Vision
                   </a>
                 </li>
-                <li>
-                  <a
-                    className="hover:text-dark"
-                    style={{ color: "#333333" }}
-                    href="#"
-                  >
-                    Awards and Recognitions
-                  </a>
-                </li>
-                <li>
-                  <a
-                    className="hover:text-dark"
-                    style={{ color: "#333333" }}
-                    href="#"
-                  >
-                    History
-                  </a>
-                </li>
-                <li>
-                  <a
-                    className="hover:text-dark"
-                    style={{ color: "#333333" }}
-                    href="#"
-                  >
-                    Teachers
-                  </a>
-                </li>
               </ul>
             </section>
 
             <section>
-              <h3 className="text-lg font-semibold">Academics</h3>
-              <ul className="mt-4 space-y-2">
+              <h3 className="text-lg  md:text-xl font-bold">Academics</h3>
+              <ul className="mt-2 sm:mt-4 space-y-1 sm:space-y-2">
                 <li>
                   <a
                     className="hover:text-dark"
@@ -189,8 +159,8 @@ const Footer: React.FC = () => {
             </section>
 
             <section>
-              <h3 className="text-lg font-semibold">Contact Us</h3>
-              <ul className="mt-4 space-y-2">
+              <h3 className="text-lg md:text-xl font-bold">Contact Us</h3>
+              <ul className="mt-2 sm:mt-4 space-y-1 sm:space-y-2">
                 <li>
                   <a
                     className="hover:text-dark"
@@ -215,9 +185,12 @@ const Footer: React.FC = () => {
         </div>
 
         {/* Bottom bar */}
-        <div className="flex flex-col xs:flex-row items-center justify-between gap-2 sm:gap-6 border-t-2 border-b-2 border-dark py-2 sm:py-4 w-full">
-          <nav aria-label="Legal links">
-            <ul className="flex flex-col xs:flex-row items-center justify-between text-[10px] xs:text-xs sm:text-sm md:text-[18px] font-medium w-full md:w-auto gap-1 xs:gap-2 sm:gap-4 list-none">
+        <div className="flex flex-col sm:flex-row flex-wrap items-center justify-between gap-2 sm:gap-6 border-t-2 border-b-2 border-dark py-2 sm:py-4 w-full">
+          <nav
+            aria-label="Legal links"
+            className="w-full sm:w-auto overflow-x-auto"
+          >
+            <ul className="flex flex-row flex-wrap items-center justify-center sm:justify-between text-[10px] xs:text-xs sm:text-sm md:text-[18px] font-medium w-full md:w-auto gap-1 xs:gap-2 sm:gap-4 list-none">
               <li className="text-center">
                 <a
                   className="hover:text-dark"
@@ -249,44 +222,48 @@ const Footer: React.FC = () => {
           </nav>
 
           <nav
-            className="flex items-center gap-3"
+            className="flex items-center gap-3 mt-2 sm:mt-0"
             aria-label="Social media links"
           >
             <a
               href="#"
               aria-label="Follow us on Facebook"
-              className="w-8 h-8 xs:w-10 xs:h-10 sm:w-14 sm:h-14 p-1 xs:p-2 sm:p-3 border-2 border-dark rounded-lg flex items-center justify-center"
+              className="w-8 h-8 md:w-10 md:h-10 sm:w-14 sm:h-14 p-1 md:p-2 sm:p-3 border-2 border-dark rounded-lg flex items-center justify-center"
               style={{ backgroundColor: "#FFDECC" }}
             >
-              <FaFacebook className="w-4 h-4 xs:w-5 xs:h-5 sm:w-6 sm:h-6" />
+              <FaFacebook className="w-4 h-4 md:w-5 md:h-5 sm:w-6 sm:h-6" />
             </a>
             <a
               href="#"
               aria-label="Follow us on Twitter"
-              className="w-8 h-8 xs:w-10 xs:h-10 sm:w-14 sm:h-14 p-1 xs:p-2 sm:p-3 border-2 border-dark rounded-lg flex items-center justify-center"
+              className="w-8 h-8 md:w-10 md:h-10 sm:w-14 sm:h-14 p-1 md:p-2 sm:p-3 border-2 border-dark rounded-lg flex items-center justify-center"
               style={{ backgroundColor: "#FFDECC" }}
             >
-              <FaTwitter className="w-4 h-4 xs:w-5 xs:h-5 sm:w-6 sm:h-6" />
+              <FaTwitter className="w-4 h-4 md:w-5 md:h-5 sm:w-6 sm:h-6" />
             </a>
             <a
               href="#"
               aria-label="Follow us on LinkedIn"
-              className="w-8 h-8 xs:w-10 xs:h-10 sm:w-14 sm:h-14 p-1 xs:p-2 sm:p-3 border-2 border-dark rounded-lg flex items-center justify-center"
+              className="w-8 h-8 md:w-10 md:h-10 sm:w-14 sm:h-14 p-1 md:p-2 sm:p-3 border-2 border-dark rounded-lg flex items-center justify-center"
               style={{ backgroundColor: "#FFDECC" }}
             >
-              <FaLinkedin className="w-4 h-4 xs:w-5 xs:h-5 sm:w-6 sm:h-6" />
+              <FaLinkedin className="w-4 h-4 md:w-5 md:h-5 sm:w-6 sm:h-6" />
             </a>
           </nav>
         </div>
 
         {/* Bottom Section */}
         <div className="w-full px-1 sm:px-4">
-          <div className="flex flex-col xs:flex-row flex-wrap justify-between font-semibold text-[10px] xs:text-xs sm:text-sm">
-            <div className="w-full text-center xs:w-auto xs:text-left">
+          <div className="flex flex-col md:flex-row flex-wrap justify-between font-semibold text-[10px] md:text-md sm:text-sm gap-1">
+            <div className="w-full text-center md:w-auto md:text-left">
               Copyright © {new Date().getFullYear()} ITI. All Rights Reserved.
             </div>
-            <div className="w-full text-center xs:w-auto xs:text-left">
-              Made with ❤️ by AATH.
+            <div className="w-full text-center md:w-auto md:text-left">
+              Made with{" "}
+              <span role="img" aria-label="love">
+                ❤️
+              </span>{" "}
+              by AATH.
             </div>
           </div>
         </div>

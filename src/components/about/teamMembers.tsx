@@ -1,4 +1,3 @@
-import React from "react";
 import SubContainer from "../common/SubContainer";
 import { IoIosMail } from "react-icons/io";
 

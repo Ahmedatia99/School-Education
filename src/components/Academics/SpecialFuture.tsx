@@ -1,4 +1,3 @@
-import React from "react";
 import SubContainer from "../common/SubContainer";
 import BoxPhotoInPosition from "../common/BoxPhotoInPosition";
 import { IoBook } from "react-icons/io5";

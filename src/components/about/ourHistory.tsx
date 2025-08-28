@@ -1,4 +1,3 @@
-import React from "react";
 import SubContainer from "../common/SubContainer";
 import History from "../common/History";
 

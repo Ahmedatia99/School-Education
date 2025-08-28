@@ -1,4 +1,3 @@
-import React from "react";
 import type { IconType } from "react-icons";
 
 type BoxObject = { pText: string; h3Text: string; icon: IconType };

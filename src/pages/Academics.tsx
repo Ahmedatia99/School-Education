@@ -1,4 +1,3 @@
-import React from "react";
 import StudentsLearn from "../components/Academics/StudentsLearn";
 import HeroAcademics from "../components/Academics/HeroAcademics";
 import SpecialFuture from "../components/Academics/SpecialFuture";

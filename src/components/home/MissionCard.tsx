@@ -1,4 +1,3 @@
-import React from "react";
 import SectionDivider from "./../common/SctionDivider";
 import { FaArrowRightLong } from "react-icons/fa6";
 

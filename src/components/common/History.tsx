@@ -1,4 +1,3 @@
-import React from "react";
 type infoBlockparams = {
   year: string;
   imgSrc: string;

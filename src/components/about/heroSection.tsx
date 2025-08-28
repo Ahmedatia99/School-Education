@@ -1,4 +1,3 @@
-import React from "react";
 type HeroSectionParams = { HeroBtn: string; HeroH: string; HeroP: string };
 const HeroSection = ({ HeroBtn, HeroH, HeroP }: HeroSectionParams) => {
   return (
