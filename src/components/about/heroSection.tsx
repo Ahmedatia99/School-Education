@@ -5,7 +5,7 @@ const HeroSection = ({ HeroBtn, HeroH, HeroP }: HeroSectionParams) => {
       {/* Left Section */}
       <div className=" md:w-1/2  flex flex-col items-center gap-4 md:items-start">
         <img
-          src="/assets/Abstract-Design.png"
+          src="/images/Abstract-Design.png"
           alt="Kids"
           className="absolute top-0 left-0 w-[30%] sm:w-[25%] md:w-[20%] lg:w-[150px] rounded-sm "
         />

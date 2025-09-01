@@ -12,8 +12,6 @@ const navbar: NavbarItem[] = [
   { label: "Home", to: "/" },
   { label: "About Us", to: "/about" },
   { label: "Academics", to: "/academics" },
-  { label: "Admissions", to: "/admissions" },
-  { label: "Student Life", to: "/student-life" },
   { label: "Contact", to: "/contact" },
 ];
 const mobileMenuPanelClasses =
@@ -33,7 +31,7 @@ const Navbar: React.FC = () => {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex">
-          <ul className="flex items-center h-full text-md font-semibold">
+          <ul className="flex items-center h-full text-md font-semibold mr-2">
             {navbar.map((item) => (
               <li
                 className={`p-3 h-full  ${

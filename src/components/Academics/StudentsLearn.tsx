@@ -1,11 +1,11 @@
 import SubContainer from "../common/SubContainer";
-import Slearn1 from "../../../assets/Slearn1.png";
-import Slearn2 from "../../../assets/Slearn2.png";
-import Slearn3 from "../../../assets/Slearn3.png";
-import Slearn4 from "../../../assets/Slearn4.png";
+import Slearn1 from "/images/Slearn1.png";
+import Slearn2 from "/images/Slearn2.png";
+import Slearn3 from "/images/Slearn3.png";
+import Slearn4 from "/images/Slearn4.png";
 
-import Slearn5 from "../../../assets/Slearn5.png";
-import Slearn6 from "../../../assets/Slearn6.png";
+import Slearn5 from "/images/Slearn5.png";
+import Slearn6 from "/images/Slearn6.png";
 import AcadmicCards from "../common/AcadmicCards";
 
 const studentsData = [
