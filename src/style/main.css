@@ -22,15 +22,13 @@
     -ms-overflow-style: none; 
     scrollbar-width: none; 
   }
-  .slick-prev:before,
-  .slick-next:before {
-    font-size: 26px;
-    color: #ff8d4d !important;
-  }
-  .slick-next,
-  .slick-prev {
-    right: -20px !important;
-    display: none !important;
+
+  .swiper-pagination {
+    position: relative !important;
+  bottom: -5px !important;
+}
+  .swiper-pagination-bullet-active {
+    background-color: var(--color-morning) !important;
   }
 }
 

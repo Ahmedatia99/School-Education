@@ -1,8 +1,5 @@
 import SubContainer from "./../common/SubContainer";
 import OurTestimonialsCard from "./OurTestimonialsCard";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-
 function OurTestimonials() {
   const data = [
     {
@@ -50,7 +47,7 @@ function OurTestimonials() {
         h2Text="Our Testimonials"
         pText="Our testimonials are heartfelt reflections of the nurturing environment we provide, where children flourish both academically and emotionally."
       />
-      <div className="slider-container">
+      <div className="px-3">
         <OurTestimonialsCard data={data} />
       </div>
     </section>
